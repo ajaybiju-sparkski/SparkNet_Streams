@@ -1,6 +1,4 @@
-/* ==========================================
-   EVENT CARD
-   ========================================== */
+
 .event-card {
   position: relative;
   border-radius: var(--radius-lg);
@@ -25,7 +23,7 @@
   outline-offset: 2px;
 }
 
-/* Media Container */
+
 .event-card__media {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -61,7 +59,7 @@
   opacity: 1;
 }
 
-/* Category badge */
+
 .event-card__category {
   position: absolute;
   top: 10px;
@@ -83,7 +81,7 @@
 .event-card__category--Science { background: rgba(251, 146, 60, 0.75); color: #fff; }
 .event-card__category--Trending{ background: rgba(250, 204, 21, 0.85); color: #111; }
 
-/* Live chip */
+
 .event-card__live-chip {
   position: absolute;
   top: 10px;
@@ -110,7 +108,6 @@
   animation: pulse-glow 1.5s ease-in-out infinite;
 }
 
-/* Views overlay */
 .event-card__views-overlay {
   position: absolute;
   bottom: 8px;
@@ -134,7 +131,7 @@
   opacity: 1;
 }
 
-/* Gradient overlay */
+
 .event-card__gradient {
   position: absolute;
   bottom: 0;
@@ -151,7 +148,7 @@
   opacity: 1;
 }
 
-/* Body */
+
 .event-card__body {
   padding: 0.9rem 1rem 1rem;
   display: flex;
@@ -194,7 +191,6 @@
   background: var(--text-muted);
 }
 
-/* Actions */
 .event-card__actions {
   display: flex;
   align-items: center;

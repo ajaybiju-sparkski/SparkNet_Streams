@@ -15,7 +15,7 @@ const CATEGORIES = [
   { label: 'Trending', icon: TrendingUp,filter: 'Trending' },
 ];
 
-const HERO = events[1]; // Coachella as hero
+const HERO = events[1]; 
 
 function formatViews(n) {
   if (n >= 1_000_000) return (n / 1_000_000).toFixed(1) + 'M';
@@ -28,7 +28,6 @@ export default function HomePage() {
   const [activeCategory, setActiveCategory] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Listen to search events dispatched from Navbar
   useEffect(() => {
     const handler = (e) => setSearchQuery(e.detail.toLowerCase());
     window.addEventListener('searchUpdate', handler);
@@ -51,7 +50,6 @@ export default function HomePage() {
 
   return (
     <main className="page-wrapper home">
-      {/* Hero Banner */}
       <section className="home__hero" aria-label="Featured event">
         <img
           src={HERO.thumbnail}
@@ -90,7 +88,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats Bar */}
       <div className="home__stats-bar" aria-label="Platform statistics">
         <div className="home__stat">
           <span className="home__stat-value">{events.length}</span>
@@ -114,7 +111,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Filter pills */}
       <nav className="home__filter-section" aria-label="Event category filters">
         <span className="home__filter-label">Filter:</span>
         <div className="home__filter-pills" role="group">
@@ -140,7 +136,6 @@ export default function HomePage() {
         </div>
       </nav>
 
-      {/* Events Grid */}
       <section className="home__events-section" aria-label="Events listing">
         <div className="home__section-header">
           <h2 className="home__section-title">

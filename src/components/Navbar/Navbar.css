@@ -36,14 +36,15 @@
 }
 
 .navbar__logo-icon {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  width: 38px;
+  height: 38px;
+  background: rgba(10, 10, 18, 0.7);
+  border: 1px solid rgba(34, 211, 238, 0.25);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 16px var(--color-primary-glow);
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.2), inset 0 0 8px rgba(124, 58, 237, 0.15);
   flex-shrink: 0;
 }
 
