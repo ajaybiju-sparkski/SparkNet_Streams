@@ -20,19 +20,16 @@ function SparkNetLogo() {
           <stop offset="100%" stopColor="#4c1d95" />
         </linearGradient>
       </defs>
-      {/* Back petal — darkest / most purple */}
       <path
         d="M50 85 C20 85 10 60 18 35 C26 15 42 10 50 10 C50 10 30 30 34 58 C36 72 44 80 50 85Z"
         fill="url(#sn-grad3)"
         opacity="0.75"
       />
-      {/* Middle petal */}
       <path
         d="M50 85 C28 78 18 58 22 38 C27 18 42 10 55 12 C55 12 36 32 42 60 C45 73 48 80 50 85Z"
         fill="url(#sn-grad2)"
         opacity="0.88"
       />
-      {/* Front petal — brightest cyan */}
       <path
         d="M50 85 C35 76 26 60 30 42 C34 22 46 12 60 14 C60 14 42 35 50 62 C53 74 52 81 50 85Z"
         fill="url(#sn-grad1)"
